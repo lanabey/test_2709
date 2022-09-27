@@ -1,0 +1,162 @@
+h1 {
+    margin: 0;
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+.header, .footer {
+    position: fixed;
+    width: 100%;
+    background-color: grey;
+    padding: 10px 0;
+}
+
+.header {
+    top: 0;
+    z-index: 1;
+}
+
+.header a {
+    color: white;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer {
+    bottom: 0;
+    color: white;
+}
+
+.main-content {
+    margin: 100px 0 60px;
+}
+
+.creation-form {
+    margin-bottom: 20px;
+}
+
+.task-form input, .task-form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.task-form__hidden, .hidden {
+    display: none;
+}
+
+.task-list {
+    border: 1px solid #c7c7c7;
+}
+
+.task-list__header {
+    margin: 0;
+}
+
+.task-list__sort {
+    padding: 5px;
+}
+
+.task-item {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 10px;
+    border-top: 1px solid #c7c7c7;
+}
+
+.task-item__user, .task-item__email, .task-item__status, .task-item__text {
+    padding: 5px;
+    border-bottom: 1px solid #c7c7c7;
+    box-sizing: border-box;
+}
+
+.task-item__user, .task-item__email {
+    border-right: 1px solid #c7c7c7;
+}
+
+.task-item__edited {
+    padding: 10px 5px;
+    margin-left: auto;
+}
+
+.task-item__id {
+    display: none;
+}
+
+.task-item__button {
+    margin: 10px 0 10px 5px;
+    padding: 5px;
+    background-color: #b19f9f;
+    color: white;
+}
+
+.task-list__footer {
+    padding: 5px;
+    display: flex;
+}
+
+.task-list__footer--last {
+    margin-left: auto;
+}
+
+.user-info {
+    margin-bottom: 1rem;
+}
+
+.user-info__text {
+    font-size: 20px;
+}
+
+.user-info__text--last {
+    margin-right: 10px;
+}
+
+.col-6 {
+    flex-basis: 50%;
+}
+
+@media (min-width: 960px) {
+    .col-lg-4 {
+        flex-basis: 33.33%;
+    }
+
+    .col-lg-8 {
+        flex-basis: 66.67%;
+    }
+
+    .col-lg-12 {
+        flex-basis: 100%;
+    }
+}
+
+@media (min-width: 720px) {
+    .col-sm-4 {
+        flex-basis: 33.33%;
+    }
+
+    .col-sm-8 {
+        flex-basis: 66.67%;
+    }
+
+    .col-sm-12 {
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 719px) {
+    .task-item__user, .task-item__email {
+        border-right: none;
+    }
+
+    .task-list {
+        margin-bottom: 20px;
+    }
+}
